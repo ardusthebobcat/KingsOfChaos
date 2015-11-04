@@ -1,0 +1,16 @@
+<body>
+  <h1>
+    Attack Page
+  </h1>
+
+  <% if @users.any? %>
+    <div class="row">
+      Rank [WiP] - Username  - - - Army Size - - - Current Gold
+    </div>
+    <% @users.each do |user| %>
+    <div class="row">
+      =Rank= - <%= user.username %> [atk] [spy] [sabotage] - - - <%= user.army_size %> - - - <%= user.total_gold %>
+    </div>
+    <% end %>
+  <% end %>
+</body>

@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Admin Account seed
+#User.create(email: 'admin@admin.com', password: 'admin', username: 'SpriteRemix')
+
+#"NPC" Account seeds
+
+
+#Test Item seeds
+Item.create({user_id: 1, base: 50000, quantity: 5, stat_type: 'true', name: 'Poison Fang Sword'})

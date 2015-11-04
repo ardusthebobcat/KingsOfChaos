@@ -1,28 +1,73 @@
-== README
+# _{KingsOfChaos Reborn}_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### _{A text/stat based combat game, remade and inspired by the original 'Kings of Chaos' game, www.kingsofchaos.com}, {November 3, 2015}_
 
-Things you may want to cover:
+#### By _**{Michael Summers}**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_{You play as an army against the other great-armies of the world. Your army strength (atack), army defensive capabilities (defense), and your covert abilities (spy) determine your ranking and relative strength in their respective areas. These numbers are influenced by the number of units you have to perform the jobs.
 
-* Configuration
+Spies can only be used for spying, as being seen on the battlefield makes them more recognizable. However, spies can gather information about enemy armies (and can even sabotage their war efforts).
 
-* Database creation
+Trained soldiers are better at warfare, but do not have the training or skills to make a living and produce gold.
 
-* Database initialization
+Untrained civilians arent very good at fighting, and make about as much noise as rambunctious children driving fire-trucks, but they have the skills to produce goods and services to bring money into your army!
 
-* How to run the test suite
+Use the tools at your disposal to configure your army as you see fit and become a world power! }_
 
-* Services (job queues, cache servers, search engines, etc.)
+## Setup
 
-* Deployment instructions
+* _git clone <repository>_
+* _run postgres_
+* _rake db:create_
+* _rake db:migrate_
+* _rake db:seed_
+* _rails s_
+* _sign up or log in_
+# _ Play and have fun!!!_
 
-* ...
+## Development Log
 
+_{
+*_ Rewrite the attack and defense algorithms to include upgrades and item stat totals.
+*_ Implement basic combat features
+*_ Implement basic logs
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+*_ Attack page sort/search/order (order within the page)
+
+*_ Improve logs
+*_ Combat risk calculation (or calculator?) (provided log information)
+}_
+
+_{Leave nothing to chance! You want it to be easy for potential employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Are there other applications this app depends on?}_
+
+## Technologies Used
+
+_{ HTML, CSS, Ruby On Rails, Javascript, Jquery, Bootstrap, better_errors (debugging), bcrypt (password encryption), Postgres, ActiveRecord (database management)}_
+
+### Legal
+
+*{This is boilerplate legal language. Read through it, and if you like it, use it. There are other license agreements online, but you can generally copy and paste this.}*
+
+Copyright (c) 2015 **_{List of contribtors}_**
+
+This software is licensed under the MIT license.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

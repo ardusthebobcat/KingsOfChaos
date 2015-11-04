@@ -1,0 +1,91 @@
+<head>
+  <%= javascript_include_tag 'user' %>
+</head>
+
+<!-- Upgrades List panel (collapsed)  -->
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" id="panel1">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-target="#upgrades_list" href="#upgrades_list" class="collapsed">Upgrades List</a>
+      </h3>
+    </div>
+    <div id="upgrades_list" class="panel-collapse collapse">
+      <p>
+        <u>Attack Upgrades</u>
+        <ul>
+          <li>Attack Upgrade 1 Placeholder</li>
+          <li>Attack Upgrade 2 Placeholder</li>
+           . . .
+        </ul>
+        <u>Defense Upgrades</u>
+        <ul>
+          <li>Defense Upgrade 1 Placeholder</li>
+          <li>Defense Upgrade 2 Placeholder</li>
+           . . .
+        </ul>
+
+        <u>Spy Upgrades</u>
+        <ul>
+          <li>Covert Upgrade 1 Placeholder</li>
+          <li>Covert Upgrade 2 Placeholder</li>
+           . . .
+        </ul>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Training List panel (collapsed)  -->
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" id="panel1">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-target="#training_list" href="#training_list" class="collapsed">Training List</a>
+      </h3>
+    </div>
+    <div id="training_list" class="panel-collapse collapse">
+      <p>
+        <u>Train Some Units</u>
+        <ul>
+          <li>Type (Count) [ Train ] [ untrain ]</li>
+          <li>untrained (###)          xxxxxx xxxxxxx [Train]</li>
+          <li>trained soldiers (###)  [      ][      ][Train]</li>
+          <li>spies (###)             [      ][      ][Train]</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+</div>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" id="panel1">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a data-toggle="collapse" data-target="#Items_list" href="#Items_list" class="collapsed">Items List</a>
+      </h3>
+    </div>
+    <div id="Items_list" class="panel-collapse collapse">
+      <p>
+        <u>Attack</u>
+        <li>Weakest item - base attack - gold cost [ amount to purchase ]</li>
+        <li>2nd weakest item - base attack - gold cost [ amount to purchase]</li>
+        . . .
+        <li>strongest item - base attack - gold cost [ amount to purchase]</li>
+        -------------------------------------------------------------<br>
+        Total cost of this purchase:      [total_cost]
+      </p>
+      <p>
+        <u>Defense</u>
+        <li>Weakest item - base defense - gold cost [ amount to purchase ]</li>
+        <li>2nd weakest item - base defense - gold cost [ amount to purchase]</li>
+        . . .
+        <li>strongest item - base defense - gold cost [ amount to purchase]</li>
+        -------------------------------------------------------------<br>
+        Total cost of this purchase:      [total_cost]
+      </p>
+
+    </div>
+  </div>
+
+</div>
