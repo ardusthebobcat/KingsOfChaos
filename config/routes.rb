@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   resources 'home', only: :index
 
 
-  resources :users, only: [:index, :new, :create, :show, :edit]
+  resources :users, only: [:index, :new, :create, :show, :edit, :update] do
+    member do
+      post :attack
+    end
+  end
 
 end

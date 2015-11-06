@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151104021202) do
+ActiveRecord::Schema.define(version: 20151105174618) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "hstore"
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
     t.integer  "base",       default: 1
     t.boolean  "stat_type"
-    t.integer  "quantity",   default: 1
-    t.integer  "user_id"
+    t.integer  "cost"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
@@ -42,6 +42,11 @@ ActiveRecord::Schema.define(version: 20151104021202) do
     t.integer  "defense_level",   default: 1
     t.integer  "spy_level",       default: 1
     t.integer  "unit_production", default: 1
+    t.hstore   "attack_items"
+    t.hstore   "defense_items"
   end
+
+  add_index "users", ["attack_items"], name: "index_users_on_attack_items", using: :gin
+  add_index "users", ["defense_items"], name: "index_users_on_defense_items", using: :gin
 
 end

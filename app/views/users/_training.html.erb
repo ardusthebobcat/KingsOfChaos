@@ -1,0 +1,21 @@
+Train Units:
+  Train "untrained" units into spies or trained soldiers.
+
+<%= form_for @user do |f| %>
+  <%= f.label "Type" %>
+  <%= f.label "Current #" %>
+  <%= f.label "Number to Train" %><br>
+
+  <%= f.label :untrained %>
+  <%= f.label :untrained, value: @user.untrained %><br>
+
+  <%= f.label :trained %>
+  <%= f.label @user.trained %>
+  <input name="user[trained]" value=0><br>
+
+  <%= f.label :spy %>
+  <%= f.label @user.spy %>
+  <input name="user[spy]" value=0><br>
+
+  <%= f.submit 'Train Units' %>
+<% end  %>

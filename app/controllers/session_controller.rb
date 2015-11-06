@@ -3,7 +3,7 @@ class SessionController < ApplicationController
     @user = User.authenticate(params[:email], params[:password])
     if @user
       session[:user_id] = @user.id
-      redirect_to user_path(@user)
+      redirect_to root_path
     else
       redirect_to login_path
     end

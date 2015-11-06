@@ -9,7 +9,7 @@
     </div>
     <% @users.each do |user| %>
     <div class="row">
-      =Rank= - <%= user.username %> [atk] [spy] [sabotage] - - - <%= user.army_size %> - - - <%= user.total_gold %>
+      =Rank= - <%= link_to user.username, user_path(user) %> <%= link_to '[Attack]', attack_user_path(user), method: 'post', locals: {session[:attack_turns] = 15} %> [spy] [sabotage] - - - <%= user.army_size %> - - - <%= user.total_gold %>
     </div>
     <% end %>
   <% end %>

@@ -13,4 +13,4 @@
 
 
 #Test Item seeds
-Item.create({user_id: 1, base: 50000, quantity: 5, stat_type: 'true', name: 'Poison Fang Sword'})
+Item.create({id: 7, base: 10000, stat_type: true, name: 'Angel-Forged Sword'})
